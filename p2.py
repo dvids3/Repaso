@@ -41,11 +41,35 @@ enemig = mi_personaje("Aliexpress",6, 5, 7, 10)
 
 
 class otro(mi_personaje):
-    pass
+    def __init__(self, nombre, fuerza, velocidad, inteligencia, vida, vidas, arma):
+        super().__init__(nombre, fuerza, velocidad, inteligencia, vida)
+        self.vidas = vidas
+        self.arma = arma
 
-amazon = otro("amazon", 10, 8, 9, 10)
+    def dañodearma(self):
+        op = int(input(f"elije arma: (1) M14 (2)UZI (3) ESCOPETA"))
+        if op == 1:
+            self.arma = print("ataque ha incrementado a", self.ataque + 4.1)
+        elif op == 2:
+            self.arma = print("ataque ha incrementado a", self.ataque + 2.5)
+        elif op == 3:
+            self.arma = print("ataque ha incrementado a", self.ataque + 3.3)
+        else:
+            print("opcion incorrecta")
+    
+    def atributos(self):
+        return super().atributos()
+        print("arma", self.arma)
+        
 
+            
+amazon = otro("amazon", 10, 8, 9, 10, 2, 3) 
+
+
+
+print(amazon.arma)
 amazon.atributos()
+
 
 
      
