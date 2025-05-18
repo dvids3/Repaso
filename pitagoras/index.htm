@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de Triángulos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <h1>Análisis Dinámico de Triángulos</h1>
+  <div>
+    <label for="figuraSelect">Figura geométrica:</label>
+<select id="figuraSelect">
+  <option value="">Selecciona una figura geométrica</option>
+  <optgroup label="Triángulos">
+    <option value="equilatero">Triángulo Equilátero</option>
+    <option value="isosceles">Triángulo Isósceles</option>
+    <option value="escaleno">Triángulo Escaleno</option>
+    <option value="rectangulo">Triángulo Rectángulo</option>
+    <option value="acutangulo">Triángulo Acutángulo</option>
+    <option value="obtusangulo">Triángulo Obtusángulo</option>
+  </optgroup>
+  <optgroup label="Cuadriláteros">
+    <option value="cuadrado">Cuadrado</option>
+    <option value="rombo">Rombo</option>
+    <option value="rectangulo_cuad">Rectángulo</option>
+    <option value="romboide">Romboide</option>
+    <option value="trapecio">Trapecio</option>
+    <option value="trapecio_isoceles">Trapecio Isosceles</option>
+  </optgroup>
+</select>
+<button id="showBtn">Mostrar</button>
+
+  </div>
+  
+  <div id="result">   
+      <img id="equilatero-img" class="figure-img" src="img/Equilatero.png" style="display: none;">
+      <img id="isosceles-img" class="figure-img" src="img/Isosceles.png" style="display: none;">
+      <img id="escaleno-img" class="figure-img" src="img/Escaleno.png" style="display: none;">
+      <img id="rectangulo-img" class="figure-img" src="img/Triángulo_Rectángulo.png" style="display: none;">
+      <img id="acutangulo-img" class="figure-img" src="img/Acutangulo.png" style="display: none;">
+      <img id="obtusangulo-img" class="figure-img" src="img/Obtusangulo.png" style="display: none;">
+
+      <img id="cuadrado-img" class="figure-img" src="img/Cuadrado.png" style="display: none;">
+      <img id="rombo-img" class="figure-img" src="img/Rombo.png" style="display: none;">
+      <img id="rectanguselo_cuad-img" class="figure-img" src="img/Rectángulo.png" style="display: none;">
+      <img id="trapecio-img" class="figure-img" src="img/trapecio.png" style="display: none;">
+      <img id="trapezoide-img" class="figure-img" src="" style="display: none;">
+      <img id="trapecio_isoceles-img" class="figure-img" src="img/trapecio_isoceles.png" style="display: none;">
+  </div>
+ 
+  <div id="areaCalculator" style="display:none;">
+      <h3>Calculadora de Área</h3>
+      <form id="areaForm"></form>
+      <p id="areaResult"></p>
+  </div>
+
+
+  <script src="script.js" defer></script>
+  <script src="data.js"></script>
+</body>
+</html>
